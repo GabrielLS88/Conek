@@ -1,42 +1,89 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.bodyPageHome { 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 80px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.headerRouters{
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.elementosHeader{
+  width: 80%;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.spaceButtonAdd{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+  background-color: var(--blue-blip);
+  padding: 10px 0px;
+  position: fixed;
 }
 
-.card {
-  padding: 2em;
+.btnAddRoteador{
+  width: 50%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--black-fosco);
+  color: var(--white-100);
+  cursor: pointer;
+  margin-bottom: 10px;
 }
 
-.read-the-docs {
-  color: #888;
+.blocoOpcoes{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.buttomOpcaoRoteador{
+  width: 100%;
+  height: 50px;
+  border-radius: 0px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--blue-blip);
+  transition: 0.3s ease-in-out;
+  color: white;
+  font-weight: bold;
+}
+
+.buttomOpcaoRoteador:hover{
+  background-color: var(--blue-dark);
+}
+
+
+.spaceApresentacaoDetalhesRouter{
+  width: 100%;
+  height: 100%;
+  padding-left:20%;
+  padding-top:4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blocoDadosInfo{
+  position: sticky;
+  width: 90%;
+  min-height: 70vh;
+  height: 90%;
+  border-radius: 10px;
+  background-color: var(--blue-blip);
+  display: none;
+  transition: 0.3s ease-in;
 }

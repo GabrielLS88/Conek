@@ -1,6 +1,6 @@
 
 
-export async function verificarDadosCliente(){
+export async function verificarDadosCliente(name,password){
     const dadosRetornoExemploApi = {
         "cliente":"Gabriel Lopes",
         "cadastro":"ativo",
